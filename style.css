@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+}
+
+.navbar {
+  height: 50px;
+  color: white;
+  background-color: black;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  height: 100%;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  color: rgb(238, 13, 13);
+  font-size: 40px;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle {
+  width: 50px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  cursor: pointer;
+  transition: all 0.75s ease;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar-menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  transition: all 0.5s ease;
+
+}
+
+.sidebar-icon {
+  color: white;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 100px 100px;
+  justify-content: left;
+  border-radius: 20px;
+}
+
+.featured-desc {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+  width: 500px;
+  color: gray;
+  text-align: justify;
+}
+
+.featured-button {
+  font-family: "Bebas Neue", cursive;
+  margin-top: 200px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: rgb(228, 12, 12);
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.featured-button:hover {
+  background-color: rgb(199, 17, 17);
+}
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 10px 30px;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  width: 270px;
+  height: 200px;
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 40px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  background-color: #333;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 40px;
+  width: 220px;
+  opacity: 0;
+  transition: 1.5s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: rgb(228, 12, 12);
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 2s all ease-in-out;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.footer {
+  font-family: "Bebas Neue", cursive;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.active {
+  transition: all 0.5s ease;
+  background-color: white;
+}
+
+.movie-list-title.active {
+  transition: all 0.5s ease;
+
+  color: black;
+}
+
+.navbar-container.active {
+  transition: all 0.5s ease;
+
+  background-color: white;
+  color: black;
+}
+
+.sidebar.active {
+  transition: all 0.5s ease;
+
+  background-color: white;
+}
+
+.sidebar-icon.active {
+  transition: all 0.5s ease;
+
+  color: black;
+}
+
+.toggle.active {
+  transition: all 0.5s ease;
+
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-25px);
+}
+
+@media only screen and (max-width: 960px) {
+  .menu-container {
+    display: none;
+  }
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Movie Design</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">NJHall</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">Home</li>
+            <li class="menu-list-item">Movies</li>
+            <li class="menu-list-item">Series</li>
+            <li class="menu-list-item">Popular</li>
+            <li class="menu-list-item">Trends</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img src="img/profilepic.JPG" alt="" class="profile-picture" />
+          <div class="profile-text-container">
+            <span class="profile-text">Profile</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="toggle">
+            <i class="fas fa-moon toggle-icon"></i>
+            <i class="fas fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <i class="sidebar-icon fas fa-search"></i>
+        <i class="sidebar-icon fas fa-home"></i>
+        <i class="sidebar-icon fas fa-users"></i>
+        <i class="sidebar-icon fas fa-bookmark"></i>
+        <i class="sidebar-icon fas fa-tv"></i>
+        <i class="sidebar-icon fas fa-hourglass-start"></i>
+        <i class="sidebar-icon fas fa-shopping-cart"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-container">
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/img15.jpg');
+            object-fit: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          "
+        >
+          <p class="featured-desc">
+            The lives of twenty-something friends in New York City, each with
+            their own dreams and drives.
+          </p>
+          <button class="featured-button">Watch Now</button>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Only on NJHall</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img src="img/img4.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img8.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img2.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img3.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img5.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img6.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img7.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Trending Now</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img src="img/img1.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img9.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img10.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img11.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img12.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img13.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img14.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/img21.jpg');
+            object-fit: contain;
+            background-size: 100vw;
+            background-repeat: no-repeat;
+          "
+        >
+          <p class="featured-desc" style="color: honeydew">
+            A child is taken in by Aghora, becoming a fierce devotee of Lord
+            Shiva, living up to his destiny to stand tall against evildoers.
+          </p>
+          <button class="featured-button">Watch Now</button>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Watch It Again</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img src="img/img15.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img16.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img17.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img18.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img19.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img20.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img21.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Binge Worthy</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img src="img/img8.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img14.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img10.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img19.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img21.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img16.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+              <div class="movie-list-item">
+                <img src="img/img4.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">RRR</span>
+                <p class="movie-list-item-desc">
+                  It is a fictional story about two Indian revolutionaries.
+                </p>
+                <button class="movie-list-item-button">PLAY</button>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <hr
+          style="
+            width: 100%;
+            height: 2px;
+            background-color: red;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+          "
+        />
+        <h3 style="padding: 5px">Designed Using HTML/CSS/JAVASCRIPT</h3>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

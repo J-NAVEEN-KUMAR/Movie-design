@@ -313,4 +313,11 @@ body {
   .menu-container {
     display: none;
   }
+  .featured-desc {
+    display: none
+  }
+  .featured-button {
+    display: none;
+  }
+
 }
